@@ -137,14 +137,18 @@ namespace Calculator_
             if (this.Text_Lab.Text.Length != 0)
             {
                 //Console.WriteLine("{0}", this.Text_Lab.Text.Substring(this.Text_Lab.Text.Length-1));
-                if (this.Text_Lab.Text.Substring(this.Text_Lab.Text.Length-1) == " ")
+                if (this.Text_Lab.Text.Substring(this.Text_Lab.Text.Length - 1) == " ")
                 {
                     this.Text_Lab.Text = this.Text_Lab.Text.Substring(0, this.Text_Lab.Text.Length - 1);
                 }
 
-                this.Text_Lab.Text = this.Text_Lab.Text.Substring(0, this.Text_Lab.Text.Length - 1);
+                string s = this.Text_Lab.Text.Substring(this.Text_Lab.Text.Length - 1);
 
-                if (this.Text_Lab.Text.Length != 0&&this.Text_Lab.Text.Substring(this.Text_Lab.Text.Length-1) == " ")
+                if (s == "+" || s == "-" || s == "*" || s == "/" || s == ")")
+                {
+                    this.Text_Lab.Text = this.Text_Lab.Text.Substring(0, this.Text_Lab.Text.Length - 2);
+                }
+                else
                 {
                     this.Text_Lab.Text = this.Text_Lab.Text.Substring(0, this.Text_Lab.Text.Length - 1);
                 }
