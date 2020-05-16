@@ -50,7 +50,7 @@
             this.Btn_divide = new System.Windows.Forms.Button();
             this.Btn_F = new System.Windows.Forms.Button();
             this.Btn_R = new System.Windows.Forms.Button();
-            this.Btn_clean = new System.Windows.Forms.Button();
+            this.Btn_Clean = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Text_Lab
@@ -61,7 +61,6 @@
             this.Text_Lab.Name = "Text_Lab";
             this.Text_Lab.Size = new System.Drawing.Size(443, 73);
             this.Text_Lab.TabIndex = 0;
-            this.Text_Lab.Text = "0";
             // 
             // Value_Lab
             // 
@@ -84,6 +83,7 @@
             this.Btn_8.TabIndex = 2;
             this.Btn_8.Text = "8";
             this.Btn_8.UseVisualStyleBackColor = true;
+            this.Btn_8.Click += new System.EventHandler(this.Btn_8_Click);
             // 
             // Btn_9
             // 
@@ -94,6 +94,7 @@
             this.Btn_9.TabIndex = 3;
             this.Btn_9.Text = "9";
             this.Btn_9.UseVisualStyleBackColor = true;
+            this.Btn_9.Click += new System.EventHandler(this.Btn_9_Click);
             // 
             // Btn_7
             // 
@@ -104,6 +105,7 @@
             this.Btn_7.TabIndex = 4;
             this.Btn_7.Text = "7";
             this.Btn_7.UseVisualStyleBackColor = true;
+            this.Btn_7.Click += new System.EventHandler(this.Btn_7_Click);
             // 
             // Btn_4
             // 
@@ -114,6 +116,7 @@
             this.Btn_4.TabIndex = 7;
             this.Btn_4.Text = "4";
             this.Btn_4.UseVisualStyleBackColor = true;
+            this.Btn_4.Click += new System.EventHandler(this.Btn_4_Click);
             // 
             // Btn_6
             // 
@@ -124,6 +127,7 @@
             this.Btn_6.TabIndex = 6;
             this.Btn_6.Text = "6";
             this.Btn_6.UseVisualStyleBackColor = true;
+            this.Btn_6.Click += new System.EventHandler(this.Btn_6_Click);
             // 
             // Btn_5
             // 
@@ -134,6 +138,7 @@
             this.Btn_5.TabIndex = 5;
             this.Btn_5.Text = "5";
             this.Btn_5.UseVisualStyleBackColor = true;
+            this.Btn_5.Click += new System.EventHandler(this.Btn_5_Click);
             // 
             // button7
             // 
@@ -144,6 +149,7 @@
             this.button7.TabIndex = 10;
             this.button7.Text = "1";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Btn_3
             // 
@@ -154,6 +160,7 @@
             this.Btn_3.TabIndex = 9;
             this.Btn_3.Text = "3";
             this.Btn_3.UseVisualStyleBackColor = true;
+            this.Btn_3.Click += new System.EventHandler(this.Btn_3_Click);
             // 
             // Btn_2
             // 
@@ -164,6 +171,7 @@
             this.Btn_2.TabIndex = 8;
             this.Btn_2.Text = "2";
             this.Btn_2.UseVisualStyleBackColor = true;
+            this.Btn_2.Click += new System.EventHandler(this.Btn_2_Click);
             // 
             // Btn_dot
             // 
@@ -174,6 +182,7 @@
             this.Btn_dot.TabIndex = 13;
             this.Btn_dot.Text = ".";
             this.Btn_dot.UseVisualStyleBackColor = true;
+            this.Btn_dot.Click += new System.EventHandler(this.Btn_dot_Click);
             // 
             // Btn_back
             // 
@@ -184,6 +193,7 @@
             this.Btn_back.TabIndex = 12;
             this.Btn_back.Text = "<";
             this.Btn_back.UseVisualStyleBackColor = true;
+            this.Btn_back.Click += new System.EventHandler(this.Btn_back_Click);
             // 
             // Btn_0
             // 
@@ -194,6 +204,7 @@
             this.Btn_0.TabIndex = 11;
             this.Btn_0.Text = "0";
             this.Btn_0.UseVisualStyleBackColor = true;
+            this.Btn_0.Click += new System.EventHandler(this.Btn_0_Click);
             // 
             // Btn_equal
             // 
@@ -204,6 +215,7 @@
             this.Btn_equal.TabIndex = 14;
             this.Btn_equal.Text = "=";
             this.Btn_equal.UseVisualStyleBackColor = true;
+            this.Btn_equal.Click += new System.EventHandler(this.Btn_equal_Click);
             // 
             // Btn_add
             // 
@@ -214,6 +226,7 @@
             this.Btn_add.TabIndex = 15;
             this.Btn_add.Text = "+";
             this.Btn_add.UseVisualStyleBackColor = true;
+            this.Btn_add.Click += new System.EventHandler(this.Btn_add_Click);
             // 
             // Btn_minus
             // 
@@ -224,7 +237,7 @@
             this.Btn_minus.TabIndex = 16;
             this.Btn_minus.Text = "-";
             this.Btn_minus.UseVisualStyleBackColor = true;
-            this.Btn_minus.Click += new System.EventHandler(this.button2_Click);
+            this.Btn_minus.Click += new System.EventHandler(this.Btn_minus_Click);
             // 
             // Btn_multiply
             // 
@@ -235,6 +248,7 @@
             this.Btn_multiply.TabIndex = 17;
             this.Btn_multiply.Text = "x";
             this.Btn_multiply.UseVisualStyleBackColor = true;
+            this.Btn_multiply.Click += new System.EventHandler(this.Btn_multiply_Click);
             // 
             // Btn_divide
             // 
@@ -245,6 +259,7 @@
             this.Btn_divide.TabIndex = 18;
             this.Btn_divide.Text = "/";
             this.Btn_divide.UseVisualStyleBackColor = true;
+            this.Btn_divide.Click += new System.EventHandler(this.Btn_divide_Click);
             // 
             // Btn_F
             // 
@@ -255,6 +270,7 @@
             this.Btn_F.TabIndex = 19;
             this.Btn_F.Text = "(";
             this.Btn_F.UseVisualStyleBackColor = true;
+            this.Btn_F.Click += new System.EventHandler(this.Btn_F_Click);
             // 
             // Btn_R
             // 
@@ -265,16 +281,18 @@
             this.Btn_R.TabIndex = 20;
             this.Btn_R.Text = ")";
             this.Btn_R.UseVisualStyleBackColor = true;
+            this.Btn_R.Click += new System.EventHandler(this.Btn_R_Click);
             // 
-            // Btn_clean
+            // Btn_Clean
             // 
-            this.Btn_clean.Font = new System.Drawing.Font("黑体", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Btn_clean.Location = new System.Drawing.Point(398, 235);
-            this.Btn_clean.Name = "Btn_clean";
-            this.Btn_clean.Size = new System.Drawing.Size(71, 149);
-            this.Btn_clean.TabIndex = 21;
-            this.Btn_clean.Text = "C";
-            this.Btn_clean.UseVisualStyleBackColor = true;
+            this.Btn_Clean.Font = new System.Drawing.Font("黑体", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Btn_Clean.Location = new System.Drawing.Point(400, 236);
+            this.Btn_Clean.Name = "Btn_Clean";
+            this.Btn_Clean.Size = new System.Drawing.Size(69, 148);
+            this.Btn_Clean.TabIndex = 21;
+            this.Btn_Clean.Text = "C";
+            this.Btn_Clean.UseVisualStyleBackColor = true;
+            this.Btn_Clean.Click += new System.EventHandler(this.Btn_clean_Click);
             // 
             // Form1
             // 
@@ -282,7 +300,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(516, 607);
-            this.Controls.Add(this.Btn_clean);
+            this.Controls.Add(this.Btn_Clean);
             this.Controls.Add(this.Btn_R);
             this.Controls.Add(this.Btn_F);
             this.Controls.Add(this.Btn_divide);
@@ -336,7 +354,7 @@
         private System.Windows.Forms.Button Btn_divide;
         private System.Windows.Forms.Button Btn_F;
         private System.Windows.Forms.Button Btn_R;
-        private System.Windows.Forms.Button Btn_clean;
+        private System.Windows.Forms.Button Btn_Clean;
     }
 }
 
