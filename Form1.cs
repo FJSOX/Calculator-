@@ -118,6 +118,7 @@ namespace Calculator_
         private void Btn_clean_Click(object sender, EventArgs e)
         {
             this.Text_Lab.Text = "";
+            this.Value_Lab.Text = "";
         }
 
         private void Btn_F_Click(object sender, EventArgs e)

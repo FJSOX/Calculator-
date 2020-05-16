@@ -69,10 +69,9 @@
             this.Value_Lab.ForeColor = System.Drawing.Color.DarkRed;
             this.Value_Lab.Location = new System.Drawing.Point(39, 71);
             this.Value_Lab.Name = "Value_Lab";
-            this.Value_Lab.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Value_Lab.Size = new System.Drawing.Size(437, 38);
             this.Value_Lab.TabIndex = 1;
-            this.Value_Lab.Text = "0";
+            this.Value_Lab.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Btn_8
             // 

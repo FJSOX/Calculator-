@@ -152,10 +152,10 @@ namespace Calculator_
         {
             int p = 0;
             SNode r, op;
-            r.Data = new string[50];
+            r.Data = new string[100];
             r.rear = 0;
             r.front = 0;
-            op.Data = new string[50];
+            op.Data = new string[100];
             op.rear = 0;
             op.front = 0;
             //int pr = 0;
