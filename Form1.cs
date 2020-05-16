@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -95,8 +96,23 @@ namespace Calculator_
         private void Btn_equal_Click(object sender, EventArgs e)
         {
             //Calculator_
-            string text = this.Text_Lab.Text;
+            Calculator_Fuction cal = new Calculator_Fuction();
             
+            Calculator_Fuction.SNode sn = new Calculator_Fuction.SNode();
+            sn.Data = new string[100];
+            sn.front = 0;
+            sn.rear = 0;
+            string text = this.Text_Lab.Text;
+            sn = cal.WriteIn(text, this.Text_Lab.Text.Length);
+
+            Calculator_Fuction.SNode r = new Calculator_Fuction.SNode();
+            r.Data = new string[100];
+            r.front = 0;
+            r.rear = 0;
+            r = cal.MidToRear(sn);
+            string te=cal.Operation(r);
+            this.Value_Lab.Text = te;
+
         }
 
         private void Btn_clean_Click(object sender, EventArgs e)
@@ -112,7 +128,7 @@ namespace Calculator_
         private void Btn_R_Click(object sender, EventArgs e)
         {
             this.Text_Lab.Text += " )";
-            MessageBox.Show("hello");
+            //MessageBox.Show("hello");
         }
 
         private void Btn_back_Click(object sender, EventArgs e)
