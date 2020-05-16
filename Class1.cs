@@ -12,6 +12,8 @@ namespace Calculator_
         {
             double value = 0;
 
+
+
             return value;
         }
     }

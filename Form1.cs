@@ -120,7 +120,7 @@ namespace Calculator_
             if (this.Text_Lab.Text.Length != 0)
             {
                 //Console.WriteLine("{0}", this.Text_Lab.Text.Substring(this.Text_Lab.Text.Length-1));
-                if (this.Text_Lab.Text.Substring(this.Text_Lab.Text.Length) == " ")
+                if (this.Text_Lab.Text.Substring(this.Text_Lab.Text.Length-1) == " ")
                 {
                     this.Text_Lab.Text = this.Text_Lab.Text.Substring(0, this.Text_Lab.Text.Length - 1);
                 }
