@@ -112,6 +112,7 @@ namespace Calculator_
         private void Btn_R_Click(object sender, EventArgs e)
         {
             this.Text_Lab.Text += " )";
+            MessageBox.Show("hello");
         }
 
         private void Btn_back_Click(object sender, EventArgs e)
